@@ -2,3 +2,4 @@ Flask
 torch
 transformers
 openai
+CORS
