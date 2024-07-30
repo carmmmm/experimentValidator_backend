@@ -4,7 +4,7 @@ import openai
 import logging
 
 app = Flask(__name__)
-CORS(app)  # This will enable CORS for all routes
+CORS(app)  # Enable CORS for all routes
 
 # Set up logging
 logging.basicConfig(level=logging.DEBUG)
@@ -26,17 +26,24 @@ def validate_experiment():
     try:
         data = request.get_json()
         logging.debug(f"Received data: {data}")
-        params = data.get('params')
+        hypothesis = data.get('hypothesis')
+        sample_size = data.get('sampleSize')
+        variables = data.get('variables')
         api_key = data.get('apiKey')
 
-        if not params or not api_key:
+        if not hypothesis or not sample_size or not variables or not api_key:
             logging.error("Missing parameters or API key.")
-            return jsonify({"error": "Experimental parameters or API key not provided"}), 400
+            return jsonify({"error": "Missing parameters or API key"}), 400
 
         openai.api_key = api_key
         logging.debug(f"Using OpenAI API key: {api_key}")
 
-        prompt = f"Validate the following experimental design:\n{params}"
+        prompt = (
+            f"Validate the following experimental design:\n"
+            f"Hypothesis: {hypothesis}\n"
+            f"Sample Size: {sample_size}\n"
+            f"Variables: {variables}\n"
+        )
         try:
             response = openai.ChatCompletion.create(
                 model="gpt-3.5-turbo",
