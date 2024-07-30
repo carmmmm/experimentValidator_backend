@@ -86,7 +86,7 @@ This will start the React development server. The application will be accessible
 * Sample Size: Provide the sample size for the experiment.
 * Variables: List the variables involved in the experiment.
 * OpenAI API Key: Enter your OpenAI API key to use the backend validation service.
-  <img width="1104" alt="Screenshot 2024-07-30 at 10 26 08 AM" src="https://github.com/user-attachments/assets/39c50432-506a-4723-8075-649efbde39ec">
+<img width="1388" alt="Screenshot 2024-07-30 at 10 26 18 AM" src="https://github.com/user-attachments/assets/434a0bad-376f-4032-893d-9fccbfc0564b">
 
 5. Submit the Form
 6. Review the feedback displayed on the page to assess the validity of your experimental design.
