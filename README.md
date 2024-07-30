@@ -1,4 +1,8 @@
 # Experimental Validation Project
+
+<img width="1366" alt="Screenshot 2024-07-30 at 10 25 58 AM" src="https://github.com/user-attachments/assets/ae3717da-3d2e-468f-be2e-8e55dec6ba8c">
+<img width="1388" alt="Screenshot 2024-07-30 at 10 26 18 AM" src="https://github.com/user-attachments/assets/434a0bad-376f-4032-893d-9fccbfc0564b">
+
 ## Overview
 This project provides a web-based application for validating experimental designs. It includes a frontend developed with React and a backend developed with Flask, which integrates with OpenAI's API to assess experimental parameters. The application helps researchers validate their experimental designs by inputting key parameters and receiving feedback on their setup.
 
@@ -73,16 +77,21 @@ This will start the React development server. The application will be accessible
 
 ## Accessing the Application
 1. Open Your Web Browser
-
 2. Navigate to http://localhost:3000 to access the frontend application.
 3. On the home page, click the "Access the Assessment Tool" button to navigate to the experiment form.
-4. Fill out the form with the following parameters:
+   <img width="1366" alt="Screenshot 2024-07-30 at 10 25 58 AM" src="https://github.com/user-attachments/assets/7b838b55-1ae8-479c-b41b-f56aa7862f80">
+
+5. Fill out the form with the following parameters:
 * Hypothesis: Describe your hypothesis for the experiment.
 * Sample Size: Provide the sample size for the experiment.
 * Variables: List the variables involved in the experiment.
 * OpenAI API Key: Enter your OpenAI API key to use the backend validation service.
+  <img width="1104" alt="Screenshot 2024-07-30 at 10 26 08 AM" src="https://github.com/user-attachments/assets/39c50432-506a-4723-8075-649efbde39ec">
+
 5. Submit the Form
 6. Review the feedback displayed on the page to assess the validity of your experimental design.
+   <img width="1379" alt="Screenshot 2024-07-30 at 10 26 37 AM" src="https://github.com/user-attachments/assets/8df2c900-f38b-4611-9f8a-303564946767">
+
 
 ### Example
 Form Input:
